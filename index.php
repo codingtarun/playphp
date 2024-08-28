@@ -35,6 +35,79 @@ $title = "PHP : PHP Hypertext Preprocessor"; // declaring & storing value to var
  * 
  */
 
+/**
+ * 
+ * String Concatination : joinin two or mroe string togeather using a dot(.) notation.
+ * ex : 
+ * echo "my name is "$fName." ".$lName;
+ * 
+ */
+
+/**
+ * Type casting (Explicit conversion): When we manually change the data type from one type to another.
+ * 
+ * Type juggling (Implicit conversion): When PHP itself tries to convert one data type to another data type. It sometime can result in unexpected behaviour.
+ * 
+ */
+
+$num1 = 10;
+$num2 = 100;
+$num3 = '300';
+
+$bool1 = true;
+$bool2 = false;
+
+$sum1 = $num1 + $num2;
+$sum2 = $num2 + $num3; // implicit conversion / type casting done by PHP.
+$sum3 = $num1 . $num3; // implicit conversion
+$sum4 = 5 + $bool1; // implicit conversion (true converted to 1)
+
+
+
+
+var_dump($sum1);
+echo "<br>";
+var_dump($sum2);
+echo "<br>";
+var_dump($sum3);
+echo "<br>";
+var_dump($sum4);
+echo "<br>";
+
+/**
+ * 
+ * Arithmatic operators  : Allow us to perform basic arithmatic operations.
+ * 1. Addition : +
+ * 2. Subtration : -
+ * 3. Multiplication : *
+ * 4. Division : /
+ * 5. Modulo : %
+ * 6. Exponential : ** 
+ * 
+ * 
+ * Assignment Operators : Assiging value to a variable.
+ * 1. Basic Assignment : = 
+ * 2. Arithmetic assignment : += , -= , *= , /= , %= , **= 
+ * 3. Bitwise assignment Operators : &= , |= , ^= , <<= , >>=
+ * 4. String Cncatination : .=
+ * 5. Null coalese : ??=  ex $a ??= $b => assigns $b if $a is null.
+ */
+
+
+/**
+ * String functions : PHP inbuild functions used to manipulate a given string.
+ */
+
+$name = "Tarun Chauhan";
+
+echo  strlen($name);
+echo "<br>";
+echo strpos($name, 'Chauhan');
+echo "<br>";
+echo $name[4]; // he string is acting like an array.
+echo "<br>";
+
+
 
 
 
