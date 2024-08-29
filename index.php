@@ -8,7 +8,7 @@
  * 2. Must start with a letter or an underscore.
  * 3. Can not start with a number.
  * 4. Can only contain letters, numbers and underscores.
- * 5. are case senstive i.e $Name is not equal to $name.
+ * 5. Are case senstive i.e $Name is not equal to $name.
  *  
  * 
  * Naming convention : 
@@ -108,6 +108,48 @@ echo $name[4]; // he string is acting like an array.
 echo "<br>";
 
 
+echo date('Y');
+echo "<br>";
+echo date('Y', 936345600);
+echo "<br>";
+echo date('Y', strtotime('1990-09-01'));
+echo "<br>";
+echo date('m');
+echo "<br>";
+echo date('d-m-Y');
+echo "<br>";
+
+
+
+/**
+ *  Arrays : Holds multiple pieces of data , same or different data type , in a single variable.
+ * 
+ */
+
+$arrayList = ['one', 1, true, 12.34, null];
+dd($arrayList);
+
+// add element to array 
+
+$arrayList[5] = "A new data added to Array"; // if length is known
+
+dd($arrayList);
+
+$arrayList[] = 101; // adding item to end of array
+
+dd($arrayList);
+
+// Update an item 
+
+$arrayList[3] = "New data at 3";
+
+dd($arrayList);
+
+// remove item 
+
+unset($arrayList[3]); // index + data both will be gone
+
+dd($arrayList);
 
 
 
@@ -115,6 +157,19 @@ echo "<br>";
 var_dump($title); // dumps the data & data type information to the screen.
 echo "<br>";
 echo gettype($title); // display the data type and one of few function in PHP which uses camelCase.
+
+// Dump & die function 
+
+function dd($value)
+{
+    echo "<pre>";
+    var_dump($value);
+    echo "</pre>";
+    echo "<br>";
+    //die();
+}
+
+
 
 ?>
 
