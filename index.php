@@ -1,178 +1,41 @@
 <?php
 
-/**
- * 
- * Variables : Container that holds data , whcih can be accessed later.
- * Rules for declaring variables : 
- * 1. Prefix with a $ sign.
- * 2. Must start with a letter or an underscore.
- * 3. Can not start with a number.
- * 4. Can only contain letters, numbers and underscores.
- * 5. Are case senstive i.e $Name is not equal to $name.
- *  
- * 
- * Naming convention : 
- * 1. $under_score : preferred internaly by developing PHP.
- * 2. $camelCase : preffered
- * 3. $PascalCase
- * 4. $lowecase
- */
+$jobList = [
+    [
+        'id' => 1,
+        'title' => 'PHP Developer',
+        'description' => 'We are looking of a PHP developer',
+        'salary' => 25000,
+        'status' => 1,
+        'posted' => '03-08-2024',
+    ],
+    [
+        'id' => 2,
+        'title' => 'Laravel Developer',
+        'description' => 'We are looking of a experianced Laravel developer',
+        'salary' => 25000,
+        'status' => 1,
+        'posted' => '03-08-2024',
+    ],
+    [
+        'id' => 1,
+        'title' => 'Fullstack Laravel + Vue developer',
+        'description' => 'We are looking of a experianced Laravel + vue develoepr',
+        'salary' => 25000,
+        'status' => 1,
+        'posted' => '03-08-2024',
+    ],
+    [
+        'id' => 1,
+        'title' => 'Vue Developer',
+        'description' => 'We are looking of a Vue developer',
+        'salary' => 25000,
+        'status' => 1,
+        'posted' => '03-08-2024',
+    ]
 
-$title = "PHP : PHP Hypertext Preprocessor"; // declaring & storing value to variable.
-
-/**
- * Datatypes : PHP is a loosly typed langauge i.e we don't need to define data type.
- * Data types supported by the PHP are : 
- * 1. String :  Sequence of characters.
- * 2. Integer : Whole Number. It can be positive or negitive.
- * 3. Float : Number with a decimal point.
- * 4. Boolean : true/false.
- * 5. Array : Holds multiple values.
- * 6. Object : Collection of properties & methods.
- * 7. null : Variable with no value.
- * 8. Resource : Files stored in the server. $file = fopen('fileName.txt','r');
- * 
- * 
- */
-
-/**
- * 
- * String Concatination : joinin two or mroe string togeather using a dot(.) notation.
- * ex : 
- * echo "my name is "$fName." ".$lName;
- * 
- */
-
-/**
- * Type casting (Explicit conversion): When we manually change the data type from one type to another.
- * 
- * Type juggling (Implicit conversion): When PHP itself tries to convert one data type to another data type. It sometime can result in unexpected behaviour.
- * 
- */
-
-$num1 = 10;
-$num2 = 100;
-$num3 = '300';
-
-$bool1 = true;
-$bool2 = false;
-
-$sum1 = $num1 + $num2;
-$sum2 = $num2 + $num3; // implicit conversion / type casting done by PHP.
-$sum3 = $num1 . $num3; // implicit conversion
-$sum4 = 5 + $bool1; // implicit conversion (true converted to 1)
-
-
-
-
-var_dump($sum1);
-echo "<br>";
-var_dump($sum2);
-echo "<br>";
-var_dump($sum3);
-echo "<br>";
-var_dump($sum4);
-echo "<br>";
-
-/**
- * 
- * Arithmatic operators  : Allow us to perform basic arithmatic operations.
- * 1. Addition : +
- * 2. Subtration : -
- * 3. Multiplication : *
- * 4. Division : /
- * 5. Modulo : %
- * 6. Exponential : ** 
- * 
- * 
- * Assignment Operators : Assiging value to a variable.
- * 1. Basic Assignment : = 
- * 2. Arithmetic assignment : += , -= , *= , /= , %= , **= 
- * 3. Bitwise assignment Operators : &= , |= , ^= , <<= , >>=
- * 4. String Cncatination : .=
- * 5. Null coalese : ??=  ex $a ??= $b => assigns $b if $a is null.
- */
-
-
-/**
- * String functions : PHP inbuild functions used to manipulate a given string.
- */
-
-$name = "Tarun Chauhan";
-
-echo  strlen($name);
-echo "<br>";
-echo strpos($name, 'Chauhan');
-echo "<br>";
-echo $name[4]; // he string is acting like an array.
-echo "<br>";
-
-
-echo date('Y');
-echo "<br>";
-echo date('Y', 936345600);
-echo "<br>";
-echo date('Y', strtotime('1990-09-01'));
-echo "<br>";
-echo date('m');
-echo "<br>";
-echo date('d-m-Y');
-echo "<br>";
-
-
-
-/**
- *  Arrays : Holds multiple pieces of data , same or different data type , in a single variable.
- * 
- */
-
-$arrayList = ['one', 1, true, 12.34, null];
-dd($arrayList);
-
-// add element to array 
-
-$arrayList[5] = "A new data added to Array"; // if length is known
-
-dd($arrayList);
-
-$arrayList[] = 101; // adding item to end of array
-
-dd($arrayList);
-
-// Update an item 
-
-$arrayList[3] = "New data at 3";
-
-dd($arrayList);
-
-// remove item 
-
-unset($arrayList[3]); // index + data both will be gone
-
-dd($arrayList);
-
-
-
-
-var_dump($title); // dumps the data & data type information to the screen.
-echo "<br>";
-echo gettype($title); // display the data type and one of few function in PHP which uses camelCase.
-
-// Dump & die function 
-
-function dd($value)
-{
-    echo "<pre>";
-    var_dump($value);
-    echo "</pre>";
-    echo "<br>";
-    //die();
-}
-
-
-
+];
 ?>
-
 <!doctype html>
 <html lang="en">
 
@@ -188,8 +51,58 @@ function dd($value)
 </head>
 
 <body>
-    <div class="container-fluid">
-        <h1><?php echo "PHP Basics"; ?></h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container p-3">
+        <div class="row">
+            <?php foreach ($jobList as $job) { ?>
+                <div class="col-sm-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $job['title']; ?></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"><?php echo $job['salary']; ?></h6>
+                            <p class="card-text"><?php echo $job['description']; ?></p>
+                            <a href="#" class="card-link"><?php echo $job['posted']; ?></a>
+                            <a href="#" class="card-link"><?php echo $job['status']; ?></a>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+
+        </div>
     </div>
 
 
