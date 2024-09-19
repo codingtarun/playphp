@@ -8,11 +8,9 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-            <?php
-                unset($_SESSION['alerts']);
-            } ?>
+            <?php } ?>
             <h5 class="card-title">New Sign Up</h5>
-            <form method="POST" action="<?php echo '../app/controller/UserController.php' ?>">
+            <form method="POST" action="<?php echo '../controller/signup.php' ?>">
                 <div class="mb-3">
                     <label for="userName" class="form-label">User Name</label>
                     <input type="text" class="form-control <?php if (isset($_SESSION['errors']['userName'])) { ?> is-invalid <?php } ?>" id="userName" name="userName">
@@ -46,6 +44,7 @@
         </div>
         <?php
         unset($_SESSION['errors']);
+        unset($_SESSION['alerts']);
         ?>
     </div>
 </div>

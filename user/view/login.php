@@ -1,4 +1,4 @@
-<?php include_once('../app/config.php'); ?><!-- Header -->
+<?php include_once('../../app/config.php'); ?><!-- Header -->
 <?php include_once(ROOT_DIR . 'components/common/header.php'); ?>
 
 <body>

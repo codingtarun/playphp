@@ -1,7 +1,12 @@
 <?php
-include_once('../config.php');
+include_once('../../app/config.php');
 
 define('REDIRECT_URL', BASE_URL . 'user/signup.php');
+
+if (isset($_SESSION['user'])) {
+    header("Location: http://127.0.0.1:8000/");
+    exit();
+}
 
 /**
  * Check if the request is not empty or not coming for 'signup.php' page
@@ -63,6 +68,18 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
              */
             $errors[] = "Email cannot contain spaces.";
         }
+        /**
+         * Check if email ID is already used
+         */
+
+        $query = $conn->prepare('SELECT * FROM `users` WHERE `email` = ? ');
+        $query->bind_param('s', $userEmail);
+        $query->execute();
+        $result = $query->get_result();
+
+        if ($result->num_rows > 0) {
+            $errors['userEmail'] = "Email Id already exists";
+        }
     } else {
         $errors['userEmail'] = "User email is required";
     }
@@ -89,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
      */
     if (!empty($errors)) {
         $_SESSION['errors'] = $errors;
-        header("Location: http://127.0.0.1:8000/user/signup.php");
+        header("Location: http://127.0.0.1:8000/user/view/signup.php");
         exit();
     }
 
@@ -108,13 +125,20 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
     $_SESSION['alerts'] = $alerts;
     $query->close();
-    header("Location:http://127.0.0.1:8000/user/signup.php");
+    /**
+     * Set the session for the user
+     */
+    $_SESSION['user']['name'] = $userName;
+    $_SESSION['user']['email'] = $userEmail;
+
+    // Redirect to home page when signup is successfull
+    header("Location:http://127.0.0.1:8000/");
     exit();
 } else {
     /**
      * Request is empty or is not coming from 'signup.php' page
      * Redirect to 'signup.php' page
      */
-    header("Location:http://127.0.0.1:8000/user/signup.php");
+    header("Location:http://127.0.0.1:8000/user/view/signup.php");
     exit();
 }

@@ -19,15 +19,23 @@
         <ul class="navbar-nav ms-auto pr-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Tarun Chauhan
+                    <?php if (isset($_SESSION['user'])) {
+                        print_r($_SESSION['user']['name']);
+                    } else {
+                        echo "Login";
+                    } ?>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Profile</a>
-                    <a class="dropdown-item" href="#">Settings</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Logout</a>
-                    <a class="dropdown-item" href="<?php echo BASE_URL . '/user/signup.php'; ?>">Signup</a>
-                    <a class="dropdown-item" href="<?php echo BASE_URL . '/user/login.php'; ?>">Login</a>
+                    <?php if (isset($_SESSION['user'])) { ?>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="<?php echo BASE_URL . '/user/controller/logout.php'; ?>">Logout</a>
+
+                    <?php } else { ?>
+                        <a class="dropdown-item" href="<?php echo BASE_URL . '/user/view/signup.php'; ?>">Signup</a>
+                        <a class="dropdown-item" href="<?php echo BASE_URL . '/user/view/login.php'; ?>">Login</a>
+                    <?php }  ?>
                 </div>
             </li>
         </ul>
