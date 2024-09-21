@@ -23,43 +23,49 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     /**
      * Validating the data 
      */
-    if (!empty($_POST['userEmail'])) {
+    if (!empty($_POST['userEmail']) && !empty($_POST['userPassword'])) {
         /**
-         * Perform validations
+         * Perform Email validations
          */
         $userEmail = htmlspecialchars(trim($_POST['userEmail']));
-        $userEmailLenght = strlen($userEmail);
-        if ($userEmailLenght > 8) {
-            if (filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
-                if (preg_match("/^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/", $userEmail)) {
-                    /**
-                     * All validations are successfull now check DB for given credentials
-                     */
-                    echo "OK";
-                } else {
-                    $errors['userEmail'] = "Email can only contain letters, numbers, and the special characters _ and . ";
-                }
-            } else {
-                $errors['userEmail'] = "Incorrect email format";
-            }
-        } else {
+        $userPassword = htmlspecialchars(trim($_POST['userPassword']));
+        $userEmailLength = strlen($userEmail);
+        $userPasswordLength = strlen($userPassword);
+        $userPasswordHash = password_hash($userPassword, PASSWORD_DEFAULT);
+        if ($userEmailLength < 8) {
             $errors['userEmail'] = "Email must be atlest 8 character long";
+        }
+        if (!filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
+            $errors['userEmail'] = "Incorrect email format";
+        }
+        if (!preg_match("/^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/", $userEmail)) {
+            $errors['userEmail'] = "Email can only contain letters, numbers, and the special characters _ and . ";
+        }
+
+        /**
+         * Perform Password validation
+         */
+        if ($userPasswordLength < 5) {
+            $errors['userPassword'] = "Password must be atleast 6 character long";
+        }
+
+        /**
+         * All validations are passed check the user credentials in DB
+         */
+        $query = 'SELECT * FROM `users` WHERE `email` = ' . $userEmail . ' AND `password` = ' . $userPasswordHash . '';
+        //$query->bind_param('ss', $userEmail, $userPasswordHash);
+        // $query->execute();
+        print_r($query);
+        exit;
+        $result = $query->get_result();
+        if ($result->num_rows > 0) {
         }
     } else {
         /**
          * Return error of empty email field
          */
-        $errors['userEmail'] = "Email field cannot be blank";
-    }
-    if (!empty($_POST['userPassword'])) {
-        /**
-         * Perform Validations
-         */
-    } else {
-        /**
-         * Return error for empty pasword field
-         */
-        $errors['userPassword'] = "Password filed cannot be blank";
+        $errors['userEmail'] = "Email & Password fields cannot be blank";
+        $errors['userPassword'] = "Email & Password fields cannot be blank";
     }
 
     if (!empty($errors)) {
