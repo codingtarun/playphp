@@ -1,1 +1,5 @@
-SELECT * FROM `users` WHERE `email` = 'abc@gmail.com' AND `password` = '$2y$10$UljmXt26jfzfijynCNmh0eymm/5L2pt./CDjTAFV2VqTy08d/P5ZC'
+CREATE TABLE `tasks` (
+	id INT PRIMARY KEY , 
+	task VARCHAR(255) NOT NULL,
+	isComplete BOOLEAN
+);l

@@ -1,18 +1,14 @@
-<!-- Configuration File -->
-<?php include_once('app/config.php'); ?>
-<!-- Header -->
-<?php include_once(ROOT_DIR . 'components/common/header.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
 <body>
-    <!-- Top Navigation-->
-    <?php include_once(ROOT_DIR . 'components/common/navbar.php'); ?>
-    <div class="container">
-        <h2>PHP Playground</h2>
-        <h3>Root Files : <?php echo BASE_URL; ?></h3>
-        <h3>Root Directory : <?php echo ROOT_DIR; ?></h3>
-    </div>
-    <!-- Footer Scripts-->
-    <?php include_once(ROOT_DIR . 'components/common/footer-scripts.php'); ?>
+
 </body>
 
 </html>
