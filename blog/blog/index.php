@@ -10,7 +10,7 @@
                 <div class="row">
                     <?php for ($i = 0; $i < 20; $i++) {
                     ?>
-                        <div class="col-sm-4 mb-3">
+                        <div class="col-sm-4 col-6 mb-3">
                             <div class="card">
                                 <img src="https://placehold.co/400x400" class="card-img-top" alt="...">
                                 <div class="card-body">

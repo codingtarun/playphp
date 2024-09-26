@@ -1,4 +1,4 @@
-<?php require_once '../config/config.php'; ?>
+<?php require_once '../../config/config.php'; ?>
 <?php include_once ROOT_DIR . 'components/header/_header.php'; ?>
 
 <body>
@@ -10,8 +10,12 @@
                     <div class="card-header d-flex justify-content-between">
                         <span class="fw-bold">Users</span>
                         <div class="btn-group">
-                            <button class="btn btn-sm btn-outline-primary"><i class="fa-solid fa-plus"></i></button>
-                            <button class="btn btn-sm btn-outline-primary"><i class="fa-solid fa-trash"></i></button>
+                            <a class="btn btn-sm btn-outline-primary" href="<?php echo BASE_URL . 'admin/user/create.php' ?>">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                            <a class="btn btn-sm btn-outline-primary" href="#">
+                                <i class="fa-solid fa-trash"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -31,8 +35,8 @@
                                         <td>Mark</td>
                                         <td><?php $status = rand(0, 1); ?>
                                             <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" <?php if ($status) { ?> checked <?php } ?>>
-                                                <label class="form-check-label" for="flexSwitchCheckChecked"><?php if ($status) { ?>Acttive <?php } else { ?> Inactive <?php } ?></label>
+                                                <input class="form-check-input" type="checkbox" id="status-switch-<?php echo $i + 1; ?>" <?php if ($status) { ?> checked <?php } ?>>
+                                                <label class="form-check-label" for="status-switch-<?php echo $i + 1; ?>"><?php if ($status) { ?>Acttive <?php } else { ?> Inactive <?php } ?></label>
                                             </div>
                                         </td>
                                         <td>

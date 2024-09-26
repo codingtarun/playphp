@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
     <div class="container-fluid">
         <a class="navbar-brand" href="<?php echo BASE_URL . 'index.php' ?>">Blog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,8 +33,8 @@
                         Dropdown
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="<?php BASE_URL . 'admin/login.php'; ?>">Login</a></li>
-                        <li><a class="dropdown-item" href="<?php BASE_URL . 'admin/register.php'; ?>">Register</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL . 'admin/auth/login.php'; ?>">Login</a></li>
+                        <li><a class="dropdown-item" href="<?php echo BASE_URL . 'admin/auth/register.php'; ?>">Register</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>

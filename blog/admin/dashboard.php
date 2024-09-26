@@ -10,7 +10,7 @@
                     <div class="col-sm-3">
                         <div class="card">
                             <div class="card-body m-0">
-                                <a href="<?php echo BASE_URL, 'admin/user.php'; ?>" class="btn btn-primary w-100">Users</a>
+                                <a href="<?php echo BASE_URL, 'admin/user/index.php'; ?>" class="btn btn-primary w-100">Users</a>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-<?php require_once '../config/config.php'; ?>
+<?php require_once '../../config/config.php'; ?>
 <?php include_once ROOT_DIR . 'components/header/_header.php'; ?>
 
 <body>
