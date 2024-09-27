@@ -1,6 +1,10 @@
-<?php require_once '../../config/config.php'; ?>
-<?php include_once ROOT_DIR . 'components/header/_header.php'; ?>
 <?php
+require_once '../../config/config.php';
+include_once ROOT_DIR . 'components/header/_header.php';
+// If user is already logged in then go to dashboard page
+if (isset($_SESSION['user'])) {
+    header('location:http://127.0.0.1:8000/blog/admin/dashboard.php');
+}
 /**
  * Register new user logic 
  */

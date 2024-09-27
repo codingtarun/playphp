@@ -17,7 +17,6 @@
                         Categories
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL . 'admin/dashboard.php' ?>">Dashboard</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li>
                             <hr class="dropdown-divider">
@@ -35,10 +34,6 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="<?php echo BASE_URL . 'admin/auth/login.php'; ?>">Login</a></li>
                         <li><a class="dropdown-item" href="<?php echo BASE_URL . 'admin/auth/register.php'; ?>">Register</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="">Logout</a></li>
                     </ul>
                 </li>
             </ul>

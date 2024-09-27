@@ -1,9 +1,13 @@
-<?php require_once '../config/config.php'; ?>
-<?php include_once ROOT_DIR . 'components/header/_header.php'; ?>
+<?php
+require_once '../config/config.php';
+include_once ROOT_DIR . 'components/header/_header.php';
+?>
+
 
 <body>
-    <?php include_once ROOT_DIR . 'components/navbar/_navbar.php'; ?>
+    <?php include_once ROOT_DIR . 'components/navbar/_adminNavbar.php'; ?>
     <div class="container-fluid mt-3">
+
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-sm-12 col-md-10 col-lg-8">
                 <div class="row">

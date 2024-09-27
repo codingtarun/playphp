@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 /**
  * Config file contains all the important configuration of this application
  */
