@@ -30,6 +30,57 @@
             <span class="btn-toggle__user-name">Tarun C.</span>
         </button>
     </header>
+    <div class="app__container">
+        <div class="sidebar">
+            <section class="menu">
+                <button class="menu__button">
+                    <i class="fa-regular fa-file class menu__button-icon"></i>
+                    <span class="menu__button-text">Template</span>
+                </button>
+                <button class="menu__button menu__button-active">
+                    <i class="fa-regular fa-image menu__button-icon"></i>
+                    <span class="menu__button-text">Images</span>
+                </button>
+                <button class="menu__button">
+                    <i class="fa-solid fa-text-height menu__button-icon"></i>
+                    <span class="menu__button-text">Text</span>
+                </button>
+                <button class="menu__button">
+                    <i class="fa-solid fa-shapes menu__button-icon"></i>
+                    <span class="menu__button-text">Shapes</span>
+                </button>
+            </section>
+            <footer class="footer">
+                <small class="footer__copyright">&copy; 2024 SocialEditor. All right reserved.</small>
+            </footer>
+        </div>
+        <section class="panel">
+            <div class="panel__heading">
+                <h1 class="panel__heading--text">Images</h1>
+                <i class="fa-solid fa-angles-left panel__heading--icon"></i>
+            </div>
+            <div class="panel__images">
+                <img src="https://placehold.co/140" alt="" class="panel__images--image">
+                <img src="https://placehold.co/140" alt="" class="panel__images--image">
+                <img src="https://placehold.co/140" alt="" class="panel__images--image">
+                <img src="https://placehold.co/140" alt="" class="panel__images--image">
+                <img src="https://placehold.co/140" alt="" class="panel__images--image">
+                <button class="panel__images--button">
+                    <i class="fa-solid fa-plus panel__content--button-icon"></i>
+                </button>
+            </div>
+        </section>
+        <main class="main">
+            <div class="info-bar">
+                <section class="info-bar__breadcrum">
+
+                </section>
+                <button class="info-bar__publish">
+                    Publish
+                </button>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>
