@@ -73,9 +73,11 @@
         <main class="main">
             <div class="info-bar">
                 <section class="info-bar__breadcrum">
-
+                    <a href="#" class="info-bar__breadcrum--links">Social Media Post</a>
+                    <i class="fa-solid fa-angles-right info-bar__breadcrum--icon"></i>
+                    <span class="info-bar__breadcrum--text">Funfriday</span>
                 </section>
-                <button class="info-bar__publish">
+                <button class="info-bar__publish--button">
                     Publish
                 </button>
             </div>

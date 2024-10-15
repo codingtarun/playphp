@@ -232,3 +232,41 @@ button {
   background-color: #edf1f3;
   flex: 1;
 }
+.info-bar {
+  height: 50px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d6dde1;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+}
+.info-bar__breadcrum {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+.info-bar__breadcrum--links {
+  color: #a6adb1;
+  text-decoration: none;
+}
+.info-bar__breadcrum--icon {
+  color: #a6adb1;
+  margin: 0 13px;
+}
+.info-bar__breadcrum--text {
+  color: #2e3335;
+  font-weight: 500;
+}
+.info-bar__publish--button {
+  margin-left: auto;
+  background-color: #375bb6;
+  font-size: 11px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 5px 15px;
+  transition: all 0.4s;
+}
+.info-bar__publish--button:hover,
+.info-bar__publish--button:focus {
+  background-color: #264383;
+}
