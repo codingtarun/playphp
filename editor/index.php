@@ -81,6 +81,30 @@
                     Publish
                 </button>
             </div>
+            <div class="artboard">
+                <section class="canvas">
+                    <img src="./images/image1.jpg" alt="" class="canvas__bg-img">
+                    <img src="./images/image1.jpg" alt="" class="canvas__fg-img">
+                    <div class="canvas__circle"></div>
+                    <div class="canvas__circle"></div>
+                    <div class="canvas__circle"></div>
+                    <div class="canvas__circle"></div>
+                </section>
+                <section class="tools">
+                    <button class="tools__button tools__button--active">
+                        <i class="fa-solid fa-crop tools__button--icon"></i>
+                    </button>
+                    <button class="tools__button">
+                        <i class="fa-solid fa-crop-simple tools__button--icon"></i>
+                    </button>
+                    <button class="tools__button">
+                        <i class="fa-solid fa-pencil tools__button--icon"></i>
+                    </button>
+                    <button class="tools__button">
+                        <i class="fa-solid fa-trash tools__button--icon"></i>
+                    </button>
+                </section>
+            </div>
         </main>
     </div>
 </body>
