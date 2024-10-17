@@ -10,9 +10,9 @@
                 <div class="row">
                     <?php for ($i = 0; $i < 20; $i++) {
                     ?>
-                        <div class="col-sm-4 col-6 mb-3">
+                        <div class="col-6 col-sm-6 col-md-4 mb-3">
                             <div class="card">
-                                <img src="https://placehold.co/400x400" class="card-img-top" alt="...">
+                                <img src="https://placehold.co/400x400" class="card-img-top" alt="Placeholder image">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
