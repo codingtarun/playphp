@@ -12,8 +12,9 @@
 }
 .login-form {
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -106,5 +107,126 @@
     top: 40%;
     left: -50%;
     transform: translateY(-50%);
+    height: 80%;
+  }
+}
+// Media query
+
+@media (max-width: $xl) {
+  .login-box {
+    width: 70%;
+  }
+  .image-box {
+    width: 30%;
+    &__laptop {
+      position: absolute;
+      top: 40%;
+      left: -30%;
+      transform: translateY(-50%);
+      height: 70%;
+    }
+  }
+  .bottom-images {
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+  }
+  .login-form {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: $lg) {
+  .login-box {
+    width: 70%;
+  }
+  .image-box {
+    width: 30%;
+    &__laptop {
+      position: absolute;
+      top: 40%;
+      left: -30%;
+      transform: translateY(-50%);
+      height: 50%;
+    }
+  }
+  .bottom-images {
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+  }
+  .login-form {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: $md) {
+  .login-box {
+    width: 75%;
+  }
+  .image-box {
+    width: 25%;
+    &__laptop {
+      position: absolute;
+      top: 40%;
+      left: -30%;
+      transform: translateY(-50%);
+      height: 35%;
+    }
+  }
+  .bottom-images {
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    transform: scale(0.9);
+  }
+  .login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: $sm) {
+  .image-box {
+    display: none;
+  }
+  .login-box {
+    width: 100%;
+  }
+  .bottom-images {
+    position: absolute;
+    bottom: -60px;
+    left: -100px;
+    transform: scale(0.7);
+  }
+  .login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+  }
+  .form-group {
+    &__label {
+      font-size: 14px;
+      margin: 3px 0;
+    }
+    &__input {
+      border-radius: 50px;
+      width: 220px;
+      height: 30px;
+      margin: 3px;
+    }
+    &__button {
+      margin-top: 30px;
+      border-radius: 50px;
+      height: 30px;
+    }
   }
 }
