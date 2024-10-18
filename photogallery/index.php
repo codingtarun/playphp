@@ -65,11 +65,27 @@
                 </div>
             </section>
             <section class="footer">
-                FOOTER
+                <small class="copyright">&copy; 2024 Photo Gallery</small>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Terms & Conditions</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                    </li>
+                </ul>
             </section>
         </div>
         <section class="gallery">
-            GALLERY
+            <?php for ($i = 0; $i < 8; $i++) { ?>
+                <div class="gallery__container">
+                    <img src="https://loremflickr.com/<?php echo rand(150, 200); ?>/<?php echo rand(150, 200); ?>/paris,town/all" alt="" class="gallery__img">
+                    <p class="gallery__comment gallery__comment--<?php echo $i; ?>">
+                        <i class="fas fastar gallery__icon"></i>
+                        <span class="gallery__number"><?php echo rand(5, 20); ?></span>
+                    </p>
+                </div>
+            <?php } ?>
         </section>
         <section class="steps">
             STEPS
