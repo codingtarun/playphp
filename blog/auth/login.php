@@ -16,39 +16,30 @@
 </head>
 
 <body>
-    <div class="app">
-        <div class="container">
-            <div class="login-box">
-                <section class="login-form">
-                    <h1 class="login-form__heading">Welcome Back!</h1>
-                    <form action="#" class="login-form__form">
-                        <div class="form-group">
-                            <label for="name" class="form-group__label">Username:</label>
-                            <input type="text" name="name" id="name" class="form-group__input">
-                        </div>
-                        <div class="form-group">
-                            <label for="name" class="form-group__label">Password:</label>
-                            <input type="text" name="name" id="name" class="form-group__input">
-                        </div>
-                        <div class="form-group">
-                            <button class="form-group__button">Login</button>
-                        </div>
-                    </form>
-                    <p class="login-form__text">Don't have an account? <a href="#" class="login-form__link">Register</a></p>
-                    <sestion class="social-links">
-                        <a href="#" class="social-links--icon"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="social-links--icon"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="#" class="social-links--icon"><i class="fa-brands fa-telegram"></i></a>
-                    </sestion>
-                </section>
-                <section class="bottom-images">
-                    <img src="../assets/images/Rectangle 5.png" class="bottom-images__one">
-                    <img src="../assets/images/Rectangle 6.png" class="bottom-images__two">
-                </section>
-            </div>
-            <div class="image-box">
-                <img src="../assets/images/Other 03.png" alt=" laptop screen img" class="image-box__laptop">
-            </div>
+    <div class="container">
+        <div class="circle">
+            <img src="../assets/images/Ellipse_1.png" alt="" class="circle__half">
+            <img src="../assets/images/Ellipse_2.png" alt="" class="circle__full">
+        </div>
+        <div class="subtract-circle">
+            <img src="../assets/images/Subtract.png" alt="">
+        </div>
+        <div class="triangle">
+            <img src="../assets/images/Polygon_1.png" alt="" class="triangle__one">
+        </div>
+        <div class="login">
+            <img src="../assets/images/LOGIN.png" alt="" srcset="">
+            <form action="#" class="login__form">
+                <div class="form__group">
+                    <label for="username" class="form__label">Username</label>
+                    <input type="text" class="form__input">
+                </div>
+                <div class="form__group">
+                    <label for="password" class="form__label">Password</label>
+                    <input type="password" class="form__input">
+                </div>
+                <button class="form__button">login</button>
+            </form>
         </div>
     </div>
     <!-- Scripts -->
