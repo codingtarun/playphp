@@ -17,18 +17,11 @@
 
 <body>
     <div class="container">
-        <div class="circle">
-            <img src="../assets/images/Ellipse_1.png" alt="" class="circle__half">
-            <img src="../assets/images/Ellipse_2.png" alt="" class="circle__full">
-        </div>
-        <div class="subtract-circle">
-            <img src="../assets/images/Subtract.png" alt="">
-        </div>
-        <div class="triangle">
-            <img src="../assets/images/Polygon_1.png" alt="" class="triangle__one">
-        </div>
+        <img src="../assets/images/Ellipse_1.png" alt="" class="circle__img">
+        <img src="../assets/images/Subtract.png" alt="" class="subtract-circle__img">
+        <img src="../assets/images/Polygon_1.png" alt="" class="triangle__img">
         <div class="login">
-            <img src="../assets/images/LOGIN.png" alt="" srcset="">
+            <img src="../assets/images/LOGIN.png" alt="" srcset="" class="login__logo">
             <form action="#" class="login__form">
                 <div class="form__group">
                     <label for="username" class="form__label">Username</label>
