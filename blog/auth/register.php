@@ -19,7 +19,6 @@
     <div class="register-container">
         <div class="login-image">
             <img src="../assets/images/user_register_bg.png" alt="" class="login-image__bg">
-            <img src="../assets/images/user_register_fg.png" alt="" class="login-image__fg">
         </div>
         <div class="login-form">
             <h2 class="login-form__heading">Please Fill out form to Register !</h2>
@@ -48,7 +47,7 @@
                     <button class="register-form__button">Register</button>
                 </div>
             </form>
-            <p class="login-form__login-link">Already have account? <a href="#">Login</a></p>
+            <p class="login-form__login-link">Already have account? <a href="http://127.0.0.1:8000/blog/auth/login.php">Login</a></p>
             <ul class="login-form__social-link">
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
