@@ -7,8 +7,13 @@
 @import "base/typography";
 
 // Components
-@import "components/navbar";
-@import "components/hero";
+@import "layout/navbar";
+@import "layout/hero";
+@import "layout/posts";
+@import "layout/about";
+
+// Components
+@import "components/button";
 
 // Pages
 @import "pages/home";

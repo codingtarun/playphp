@@ -1,0 +1,62 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  &__background {
+    display: flex;
+    &--white {
+      height: 2rem;
+      flex: 2;
+      background-color: $b-color-light;
+    }
+    &--yellow {
+      flex: 8;
+      height: 2rem;
+      background-color: $b-color-yellow;
+    }
+    &--purple {
+      flex: 2;
+      height: 2rem;
+      background-color: $b-color-purple;
+    }
+  }
+  &__info {
+    background-color: $b-color-lavender;
+    display: flex;
+  }
+  &__us {
+    flex: 1;
+    padding: 10rem 8rem;
+    &--secondary-heading {
+      color: $b-color-black;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+    &--primary-heading {
+      color: $b-color-black;
+      font-size: 3.6rem;
+      line-height: 3.5rem;
+      margin-bottom: 2rem;
+      letter-spacing: -1.5px;
+    }
+    &--excerpt {
+      color: $b-color-medium-grey;
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+    &--link {
+      text-decoration: none;
+      font-weight: bold;
+      color: $b-color-purple;
+    }
+  }
+  &__our-mission {
+    flex: 1;
+    padding: 10rem 8rem;
+    &--primary-heading {
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+  }
+}

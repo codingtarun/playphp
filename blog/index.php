@@ -41,15 +41,88 @@
                 <button class="navbar__button--toggle">Subscribe</button>
             </div>
         </nav>
-        <section class="hero">
-            <div class="hero__box">
-                <img src="../blog/assets/images/blog/man-in-black-suit.png" alt="" class="hero__image">
-                <p class="hero__category">Posted on <span class="bold uppercase">Startup</span></p>
-                <h1 class="hero__heading">Step-by-step guide to choosing great font pairs</h1>
-                <p class="hero__author">By <span class="link">James West</span> | May 23, 2024</p>
-                <p class="hero__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vel nulla quis corrupti hic ab, id maiores cupiditate necessitatibus, unde, iste accusamus rem? Modi corporis perferendis nulla, rem nisi dicta?</p>
+        <div class="content">
+            <!--Hero Section-->
+            <section class="hero">
+                <div class="hero__box">
+                    <div class="hero__image">
+                        <img src="../blog/assets/images/blog/man-in-black-suit.png" alt="" class="hero__image--bg">
+                        <img src="../blog/assets/images/blog/Overlay.png" alt="" class="hero__image--fg">
+                    </div>
+                    <div class="hero__info">
+                        <p class="hero__info--category">Posted on <span class="bold">Startup</span></p>
+                        <h1 class="hero__info--heading">Step-by-step guide to choosing great font pairs</h1>
+                        <p class="hero__info--author">By <span class="txt-yellow">James West</span> | May 23, 2024</p>
+                        <p class="hero__info--excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit.Omnis vel nulla quis corrupti hic ab, id<br> maiores cupiditate necessitatibus, unde,dicta?</p>
+                        <button class="button-yellow">Read More > </button>
+                    </div>
+                </div>
+            </section>
+            <!--/Hero Section-->
+            <!--Feature / All Post Section-->
+            <div class="posts">
+                <section class="featured-posts">
+                    <h1 class="primary-heading">Featured Post</h1>
+                    <div class="post">
+                        <img src="./assets/images/blog/white-concrete-building.png" alt="" class="post__image">
+                        <h3 class="tertiary-heading">By <span class="txt-purple">John Doe</span> | May 23, 2022</h3>
+                        <h2 class="secondary-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugit qui tempora. </h2>
+                        <p class="post__excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quisquam maiores fugiat porro odit omnis nostrum voluptates atque? Voluptate delectus reiciendis ab possimus corrupti consequuntur eligendi ut vel quia veritatis!
+                        </p>
+                        <button class="button-yellow">Read More ></button>
+                    </div>
+                </section>
+                <section class="all-posts">
+                    <div class="all-posts__header">
+                        <h1 class="primary-heading">All Posts</h1>
+                        <a href="#" class="all-posts__view--all">View All</a>
+                    </div>
+                    <?php for ($i = 0; $i < 3; $i++) { ?>
+                        <a href="#" class="all-posts__links">
+                            <h3 class="tertiary-heading">By <span class="txt-purple">John Doe</span> | May 23, 2022</h3>
+                            <h2 class="secondary-heading">Lorem ipsum dolor sit amet conelitdolor sit amet conelit fugit qui tempora. </h2>
+                        </a>
+                    <?php } ?>
+                </section>
             </div>
-        </section>
+            <!--/Feature / All Post Section-->
+            <!-- About Us / Our mission-->
+            <div class="about">
+                <div class="about__background">
+                    <div class="about__background--white"></div>
+                    <div class="about__background--yellow"></div>
+                    <div class="about__background--purple"></div>
+                </div>
+                <div class="about__info">
+                    <div class="about__us">
+                        <h3 class="about__us--secondary-heading">
+                            About Us
+                        </h3>
+                        <h2 class="about__us--primary-heading">
+                            We are a community of content writers who share their learning
+                        </h2>
+                        <p class="about__us--excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quisquam maiores fugiat porro odit omnis nostrum voluptates atque? Voluptate delectus reiciendis ab possimus corrupti consequuntur eligendi ut vel quia veritatis!
+                        </p>
+                        <a href="" class="about__us--link">Read more ></a>
+                    </div>
+                    <div class="about__our-mission">
+                        <h3 class="about__us--secondary-heading">
+                            Our Mission
+                        </h3>
+                        <h2 class="about__our-mission--primary-heading">
+                            Creating valuable content for creative all aroud the world
+                        </h2>
+                        <p class="post__excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quisquam maiores fugiat porro odit omnis nostrum voluptates atque? Voluptate delectus reiciendis ab possimus corrupti consequuntur eligendi ut vel quia veritatis!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- /About Us / Our mission-->
+        </div>
+
     </div>
     <!-- Scripts -->
     <script src="assets/js/script.js"></script>

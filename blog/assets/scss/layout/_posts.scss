@@ -1,0 +1,43 @@
+.posts {
+  width: 100%;
+  display: flex;
+  margin-bottom: 12rem;
+}
+.featured-posts {
+  width: 50%;
+}
+.all-posts {
+  width: 50%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  &__view--all {
+    margin-bottom: 2.5rem;
+    text-decoration: none;
+    color: $b-color-purple;
+  }
+  &__links {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 2rem 12rem 2rem 3rem;
+    &:hover {
+      background-color: $b-color-light-yellow;
+    }
+  }
+}
+.post {
+  padding: 1rem 5rem;
+  &__image {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  &__excerpt {
+    color: $b-color-medium-grey;
+    font-size: 1.3rem;
+    margin-bottom: 3.5rem;
+  }
+}
