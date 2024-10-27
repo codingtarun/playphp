@@ -1,0 +1,20 @@
+.started {
+  width: 100%;
+  position: relative;
+  height: 7.2rem;
+  border: 1px solid blue;
+  &__bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  &__info {
+    border: 1px solid red;
+    background-color: $b-color-light;
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

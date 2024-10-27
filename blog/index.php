@@ -121,6 +121,58 @@
                 </div>
             </div>
             <!-- /About Us / Our mission-->
+            <!--Choose A category section -->
+            <div class="catagory">
+                <h2 class="catagory__heading">
+                    Choose A Catagory
+                </h2>
+                <div class="catagory__list">
+                    <div class="catagory__details">
+                        <img src="./assets/images/blog/business.png" alt="" class="catagory__icon">
+                        <h3 class="catagory__title">Business</h3>
+                        <p class="catagory__excerpt">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptatem temporibus a quae dolor
+                        </p>
+                    </div>
+                    <div class="catagory__details">
+                        <img src="./assets/images/blog/startup.png" alt="" class="catagory__icon catagory__icon--startup">
+                        <h3 class="catagory__title">Startup</h3>
+                        <p class="catagory__excerpt">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptatem temporibus a quae dolor
+                        </p>
+                    </div>
+                    <div class="catagory__details">
+                        <img src="./assets/images/blog/economy.png" alt="" class="catagory__icon">
+                        <h3 class="catagory__title">Economy</h3>
+                        <p class="catagory__excerpt">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptatem temporibus a quae dolor
+                        </p>
+                    </div>
+                    <div class="catagory__details">
+                        <img src="./assets/images/blog/tech.png" alt="" class="catagory__icon">
+                        <h3 class="catagory__title">Technology</h3>
+                        <p class="catagory__excerpt">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptatem temporibus a quae dolor
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/Choose A category section -->
+            <!--Why we started-->
+            <div class="started">
+                <div class="started__bg-image">
+                    <img src="./assets/images/blog/close-up.png" alt="" class="started__image">
+                </div>
+                <div class="started__info">
+                    <p class="started__caption">Why we started</p>
+                    <h1 class="started__heading">It started out as a simple idea and evolved into our passion</h1>
+                    <p class="started__excerpt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius sequi architecto quibusdam fugit ratione placeat fuga ipsum quasi ab recusandae laborum, veritatis, explicabo eum voluptatum at ex ipsam. At.
+                    </p>
+                    <button class="button-yellow">Discover out story > </button>
+                </div>
+            </div>
+            <!--/Why we started-->
         </div>
 
     </div>

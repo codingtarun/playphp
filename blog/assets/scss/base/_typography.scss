@@ -3,7 +3,8 @@ body {
 }
 
 .primary-heading {
-  font-size: 3.7rem;
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
   color: $b-color-black;
   margin-bottom: 2.5rem;
 }

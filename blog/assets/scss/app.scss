@@ -1,16 +1,18 @@
 // Abstracts
 @import "abstracts/variables";
 @import "abstracts/utilities";
-// Base
 
+// Base
 @import "base/reset";
 @import "base/typography";
 
-// Components
+// Layouts
 @import "layout/navbar";
 @import "layout/hero";
 @import "layout/posts";
 @import "layout/about";
+@import "layout/catagory";
+@import "layout/started";
 
 // Components
 @import "components/button";

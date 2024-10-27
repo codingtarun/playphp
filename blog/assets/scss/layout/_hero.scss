@@ -32,32 +32,23 @@
     margin-top: 25rem;
     color: $b-color-light;
     &--category {
-      font-variant: small-caps;
+      text-transform: uppercase;
       margin-bottom: 2rem;
       font-size: 2rem;
     }
     &--heading {
-      font-size: 5.5rem;
+      font-size: $display-font-size;
       margin-bottom: 1.8rem;
-      line-height: 5.5rem;
+      line-height: $display-line-height;
     }
     &--author {
-      font-size: 1.8rem;
-      margin-bottom: 1.8rem;
+      font-size: $txt1-font-size;
+      margin-bottom: $txt1-line-height;
     }
     &--excerpt {
-      font-size: 1.6rem;
+      font-size: $txt1-font-size;
       margin-bottom: 3rem;
-      line-height: 3rem;
-    }
-    &--button {
-      padding: 1.6rem 4.8rem;
-      background-color: $b-color-yellow;
-      color: $b-color-black;
-      border: none;
-      font-size: 1.8rem;
-      font-weight: bold;
-      cursor: pointer;
+      line-height: $txt1-line-height;
     }
   }
 }

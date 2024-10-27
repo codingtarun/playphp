@@ -16,11 +16,56 @@ $xxl: 1536px;
 //Blog font
 $b-font-family: "Sen", sans-serif;
 // Blog Colors
+
 $b-color-black: #232536;
 $b-color-dark-grey: #4c4c4c;
 $b-color-medium-grey: #6d6e76;
 $b-color-lavender: #f4f0f8;
 $b-color-light: #ffffff;
 $b-color-yellow: #ffd050;
+$b-color-yellow-dark: #edc14a;
 $b-color-light-yellow: #fbf6ea;
 $b-color-purple: #592ea9;
+
+// HEADING FONTS
+$h1-font-size: 4.8rem;
+$h1-line-height: 6.4rem;
+
+$h2-font-size: 3.6rem;
+$h2-line-height: 4.8rem;
+
+$h3-font-size: 2.8rem;
+$h3-line-height: 3.6rem;
+
+$h4-font-size: 2.4rem;
+$h4-line-height: 3.2rem;
+
+$h5-font-size: 2rem;
+$h5-line-height: 3.2rem;
+
+$h6-font-size: 1.6rem;
+$h6-line-height: 2.4rem;
+
+// BODY FONTS
+$txt1-font-size: 1.6rem;
+$txt1-line-height: 2.8rem;
+
+$txt2-font-size: 1.4rem;
+$txt2-line-height: 2rem;
+
+// LABEL
+
+$label-font-size: 1.4rem;
+$label-line-height: 2rem;
+
+// BUTTONS
+$btn-primary-color: $b-color-yellow;
+$btn-primary-hover-color: $b-color-yellow-dark;
+
+// DISPLAY
+
+$display-font-size: 5.6rem;
+$display-line-height: 6.4rem;
+
+// MARGINS
+$section-bottom-margin: 12rem;

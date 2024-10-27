@@ -1,0 +1,45 @@
+.catagory {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: $section-bottom-margin;
+  &__heading {
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    margin-bottom: 4rem;
+  }
+  &__list {
+    display: flex;
+    gap: 2rem;
+  }
+  &__details {
+    flex: 1;
+    border: 1px solid rgba($b-color-medium-grey, 0.3);
+    padding: 3rem;
+    &:hover {
+      background-color: $b-color-yellow;
+      cursor: pointer;
+      border: 1px solid $b-color-yellow;
+    }
+  }
+  &__icon {
+    margin-bottom: 2rem;
+    background-image: url(../images/blog/Icon-background.png);
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire area */
+    &--startup {
+      width: 4.8rem;
+      padding: 1rem;
+    }
+  }
+  &__title {
+    font-size: $h3-font-size;
+    line-height: $h3-line-height;
+  }
+  &__excerpt {
+    font-size: $txt1-font-size;
+    line-height: $txt1-line-height;
+    color: $b-color-medium-grey;
+  }
+}
