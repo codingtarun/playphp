@@ -1,0 +1,89 @@
+.testimonials {
+  width: 100%;
+  margin-bottom: $section-bottom-margin;
+  background-color: $b-color-light-yellow;
+  padding: 6rem 7rem;
+  display: flex;
+  &__info {
+    flex: 2;
+    padding: 0 8rem;
+    border-right: 1px solid rgba($b-color-medium-grey, 0.4);
+  }
+  &__title {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 2rem;
+  }
+  &__heading {
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    letter-spacing: -2px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    font-size: $txt1-font-size;
+    line-height: $txt1-line-height;
+    color: $b-color-black;
+  }
+  &__box {
+    flex: 3;
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__excerpt {
+    font-size: $h4-font-size;
+    line-height: $h4-line-height;
+    font-weight: bold;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    &--city {
+      font-size: $txt1-font-size;
+      line-height: $txt1-line-height;
+      color: $b-color-black;
+    }
+    &--name {
+      font-size: $h4-font-size;
+      line-height: $h4-line-height;
+      font-weight: bold;
+    }
+  }
+  &__controls {
+    display: flex;
+    gap: 2rem;
+    &--left {
+      background-color: $b-color-light;
+      height: 4.8rem;
+      width: 4.8rem;
+      border-radius: 50%;
+      border: none;
+      color: $b-color-black;
+      font-size: 1.5rem;
+      font-weight: lighter;
+    }
+    &--right {
+      background-color: $b-color-black;
+      height: 4.8rem;
+      width: 4.8rem;
+      border-radius: 50%;
+      border: none;
+      color: $b-color-light;
+      font-size: 1.5rem;
+      font-weight: lighter;
+    }
+  }
+}

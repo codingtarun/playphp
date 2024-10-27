@@ -166,13 +166,177 @@
                 <div class="started__info">
                     <p class="started__caption">Why we started</p>
                     <h1 class="started__heading">It started out as a simple idea and evolved into our passion</h1>
-                    <p class="started__excerpt">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius sequi architecto quibusdam fugit ratione placeat fuga ipsum quasi ab recusandae laborum, veritatis, explicabo eum voluptatum at ex ipsam. At.
-                    </p>
+
                     <button class="button-yellow">Discover out story > </button>
                 </div>
             </div>
             <!--/Why we started-->
+            <!--Author List-->
+            <div class="authors">
+                <h2 class="authors__heading">
+                    List of Authors
+                </h2>
+                <div class="authors__list">
+                    <div class="authors__details">
+                        <img src="./assets/images/blog/man-in-yellow.png" alt="" class="authors__image">
+                        <h3 class="authors__name">Floyd Miles</h3>
+                        <p class="authors__profile">Content Writer @company</p>
+                        <ul class="authors__social">
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-facebook" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-twitter" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-instagram" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-linkedin" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="authors__details">
+                        <img src="./assets/images/blog/woman-in-white.png" alt="" class="authors__image">
+                        <h3 class="authors__name">Dianne Russelll</h3>
+                        <p class="authors__profile">Content Writer @company</p>
+                        <ul class="authors__social">
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-facebook" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-twitter" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-instagram" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-linkedin" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="authors__details">
+                        <img src="./assets/images/blog/fashion-woman.png" alt="" class="authors__image">
+                        <h3 class="authors__name">Jenny Wilson</h3>
+                        <p class="authors__profile">Content Writer @company</p>
+                        <ul class="authors__social">
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-facebook" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-twitter" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-instagram" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-linkedin" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="authors__details">
+                        <img src="./assets/images/blog/content-baker.png" alt="" class="authors__image">
+                        <h3 class="authors__name">Leslie Alexander</h3>
+                        <p class="authors__profile">Content Writer @company</p>
+                        <ul class="authors__social">
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-facebook" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-twitter" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-instagram" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                            <li class="authors__social--profile">
+                                <a href="#" class="authors__social--profile-links">
+                                    <i class="fa-brands fa-linkedin" class="authors__social--profile-icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--/Author List-->
+            <!--Featured In-->
+            <div class="featured">
+                <img src="./assets/images/blog/Featured_in.png" alt="" class="featured__image">
+                <img src="./assets/images/blog/Logo_1.png" alt="" class="featured__image">
+                <img src="./assets/images/blog/Logo_2.png" alt="" class="featured__image">
+                <img src="./assets/images/blog/Logo_3.png" alt="" class="featured__image">
+                <img src="./assets/images/blog/Logo_4.png" alt="" class="featured__image">
+                <img src="./assets/images/blog/Logo_5.png" alt="" class="featured__image">
+            </div>
+            <!--/Featured In-->
+            <!--Testimonials-->
+            <div class="testimonials">
+                <div class="testimonials__info">
+                    <p class="testimonials__title">
+                        Testimonials
+                    </p>
+                    <h2 class="testimonials__heading">
+                        What people say about our blog
+                    </h2>
+                    <p class="testimonials__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo deleniti, fuga tempore numquam voluptas aliquid quibusdam excepturi voluptatibus molestiae incidunt.
+                    </p>
+                </div>
+                <div class="testimonials__box">
+                    <div class="testimonials__list">
+                        <h4 class="testimonials__excerpt">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus obcaecati beatae facere, inventore maxime quasi vitae neque nemo facilis,
+                        </h4>
+                    </div>
+                    <div class="testimonials__footer">
+                        <div class="testimonials__user">
+                            <img src="./assets/images/blog/Profile_picture.png" class="testimonials__user--image">
+                            <div class="testimonials__user--details">
+                                <h4 class="testimonials__user--name">
+                                    Jonathan Vallem
+                                </h4>
+                                <p class="testimonials__user--city">
+                                    New york, USA
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonials__controls">
+                            <button class="testimonials__controls--left"><i class="fa-solid fa-arrow-left"></i></button>
+                            <button class="testimonials__controls--right"><i class="fa-solid fa-arrow-right"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Testimonials-->
         </div>
 
     </div>

@@ -1,8 +1,8 @@
 .started {
   width: 100%;
   position: relative;
-  height: 7.2rem;
-  border: 1px solid blue;
+  height: 70.5rem;
+  margin-bottom: $section-bottom-margin;
   &__bg-image {
     position: absolute;
     top: 0;
@@ -10,11 +10,26 @@
     height: 100%;
   }
   &__info {
-    border: 1px solid red;
+    height: 58.4rem;
+    width: 50%;
     background-color: $b-color-light;
     z-index: 1000;
     position: absolute;
     bottom: 0;
     right: 0;
+    padding: 6rem;
+  }
+  &__caption {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+  }
+  &__heading {
+    font-size: $h1-font-size;
+    line-height: $h1-line-height;
+    letter-spacing: -2px;
+    margin-bottom: 15rem;
   }
 }

@@ -1,0 +1,59 @@
+.authors {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: $section-bottom-margin;
+  &__heading {
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    letter-spacing: -2px;
+    font-weight: bold;
+    margin-bottom: 5rem;
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+  }
+  &__details {
+    flex: 1;
+    background-color: $b-color-light-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    &:hover {
+      background-color: $b-color-light-yellow;
+      cursor: pointer;
+    }
+  }
+  &__image {
+    width: 12.8rem;
+    margin-bottom: 1.5rem;
+  }
+  &__name {
+    font-size: $h3-font-size;
+    letter-spacing: -1px;
+    line-height: $h3-line-height;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  &__profile {
+    font-size: $txt2-font-size;
+    line-height: $txt2-line-height;
+    color: $b-color-medium-grey;
+    margin-bottom: 1.5rem;
+  }
+  &__social {
+    list-style: none;
+    display: flex;
+    gap: 0.8rem;
+    &--profile-links {
+      text-decoration: none;
+      color: $b-color-black;
+    }
+  }
+}

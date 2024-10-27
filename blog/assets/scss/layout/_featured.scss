@@ -1,0 +1,10 @@
+.featured {
+  margin-bottom: $section-bottom-margin;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__image {
+    opacity: 0.8;
+  }
+}
