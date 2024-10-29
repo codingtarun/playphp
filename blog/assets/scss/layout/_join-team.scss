@@ -1,0 +1,29 @@
+.join-team {
+  width: 100%;
+  margin-bottom: $section-bottom-margin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__heading {
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  &__excerpt {
+    font-size: $txt1-font-size;
+    line-height: $txt1-line-height;
+    margin-bottom: 2rem;
+    color: $b-color-medium-grey;
+    text-align: center;
+  }
+}

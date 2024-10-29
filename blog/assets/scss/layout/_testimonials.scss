@@ -74,6 +74,9 @@
       color: $b-color-black;
       font-size: 1.5rem;
       font-weight: lighter;
+      &:hover {
+        cursor: pointer;
+      }
     }
     &--right {
       background-color: $b-color-black;
@@ -84,6 +87,9 @@
       color: $b-color-light;
       font-size: 1.5rem;
       font-weight: lighter;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

@@ -337,6 +337,54 @@
                 </div>
             </div>
             <!--/Testimonials-->
+            <!--Join our team-->
+            <div class="join-team">
+                <div class="join-team__box">
+                    <h2 class="join-team__heading">
+                        Join our team to be a part of out story
+                    </h2>
+                    <p class="join-team__excerpt">
+                        Lorem luptates aut omnis et reprehenderit reiciendis quae maxime dolor excepturi deleniti enim veniam doloremque at. Nisi reiciendis nulla minima a.
+                    </p>
+                    <button class="button-yellow">Join now</button>
+                </div>
+            </div>
+            <!--/Join our team-->
+            <div class="footer">
+                <div class="footer__links">
+                    <h2 class="footer__logo">
+                        <span class="footer__logo--bracket">{</span><span class="footer__logo--text">Blog</span>
+                    </h2>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Home</a></li>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About Us</a></li>
+                        <li><a href="#" class="footer__link">Contact Us</a></li>
+                        <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <h2 class="footer__heading">
+                        Subscribe to our news letter to get latest updates and news
+                    </h2>
+                    <div class="footer__input-group">
+                        <input type="text" name="" id="" class="footer__input-group--email" placeholder="Enter Your Email">
+                        <button class="button-yellow">Subscribe</button>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <p class="footer__social--contact">
+                        Finstreet 118 2561 Fintown <br>
+                        Hello@blog.com 020 7993 2905
+                    </p>
+                    <ul class="footer__social--list">
+                        <li><a href="#" class="footer__social--links"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#" class="footer__social--links"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#" class="footer__social--links"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="footer__social--links"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
     </div>

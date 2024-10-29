@@ -1,0 +1,90 @@
+.footer {
+  width: 100%;
+  background-color: $b-color-black;
+  padding: 6rem 6rem 2rem 6rem;
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  &__logo {
+    color: $b-color-light;
+    &--bracket {
+      font-size: 3.5rem;
+      font-weight: bolder;
+    }
+    &--text {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    align-items: center;
+    height: 100%;
+  }
+  &__link {
+    text-decoration: none;
+    color: $b-color-light;
+    font-size: $txt1-font-size;
+    line-height: $txt1-line-height;
+  }
+  &__subscribe {
+    padding: 7rem 6rem;
+    background-color: rgba($b-color-light, 0.1);
+    color: $b-color-light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__heading {
+    flex: 1;
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    font-weight: bold;
+    letter-spacing: -2px;
+  }
+  &__input-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--email {
+      height: 5rem;
+      padding: 1rem 1rem;
+      width: 70%;
+      background: transparent;
+      border: 1px solid $b-color-dark-grey;
+      color: rgba($b-color-light, 0.7);
+      font-size: $h6-font-size;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    font-size: $txt1-font-size;
+    line-height: $txt1-line-height;
+    color: rgba($b-color-light, 0.3);
+    &--list {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      list-style: none;
+    }
+    &--links {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: rgba($b-color-light, 0.3);
+      }
+    }
+  }
+}
