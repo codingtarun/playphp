@@ -65,12 +65,12 @@
                     <h1 class="primary-heading">Featured Post</h1>
                     <div class="post">
                         <img src="./assets/images/blog/white-concrete-building.png" alt="" class="post__image">
-                        <h3 class="tertiary-heading">By <span class="txt-purple">John Doe</span> | May 23, 2022</h3>
-                        <h2 class="secondary-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugit qui tempora. </h2>
-                        <p class="post__excerpt">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quisquam maiores fugiat porro odit omnis nostrum voluptates atque? Voluptate delectus reiciendis ab possimus corrupti consequuntur eligendi ut vel quia veritatis!
-                        </p>
-                        <button class="button-yellow">Read More ></button>
+                        <b class="post__label">By <span class="txt-purple">John Doe</span> | May 23, 2022</p>
+                            <h2 class="post__heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugit qui tempora. </h2>
+                            <p class="post__excerpt">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quisquam maiores fugiat porro odit omnis nostrum voluptates atque? Voluptate delectus reiciendis ab possimus corrupti consequuntur eligendi ut vel quia veritatis!
+                            </p>
+                            <button class="button-yellow">Read More ></button>
                     </div>
                 </section>
                 <section class="all-posts">
@@ -78,10 +78,10 @@
                         <h1 class="primary-heading">All Posts</h1>
                         <a href="#" class="all-posts__view--all">View All</a>
                     </div>
-                    <?php for ($i = 0; $i < 3; $i++) { ?>
+                    <?php for ($i = 0; $i < 4; $i++) { ?>
                         <a href="#" class="all-posts__links">
-                            <h3 class="tertiary-heading">By <span class="txt-purple">John Doe</span> | May 23, 2022</h3>
-                            <h2 class="secondary-heading">Lorem ipsum dolor sit amet conelitdolor sit amet conelit fugit qui tempora. </h2>
+                            <p class="all-posts__links-label">By <span class="txt-purple">John Doe</span> | May 23, 2022</p>
+                            <h4 class="all-posts__links-heading">Lorem ipsum dolor sit amet conelitdolor sit amet conelit fugit qui tempora. </h4>
                         </a>
                     <?php } ?>
                 </section>

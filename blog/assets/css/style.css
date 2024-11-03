@@ -182,6 +182,16 @@ body {
 .all-posts__links:hover {
   background-color: #fbf6ea;
 }
+.all-posts__links-label {
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  line-height: 2rem;
+}
+.all-posts__links-heading {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: bold;
+}
 
 .post {
   padding: 1rem 5rem;
@@ -196,6 +206,64 @@ body {
   margin-bottom: 3.5rem;
 }
 
+@media (max-width: 992px) {
+  .featured-posts {
+    width: 50%;
+  }
+  .all-posts {
+    width: 50%;
+  }
+  .all-posts__links {
+    padding: 2rem 12rem 2rem 3rem;
+  }
+  .all-posts__links-heading {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .post {
+    padding: 1rem 5rem;
+  }
+  .post__image {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .post__excerpt {
+    color: #6d6e76;
+    font-size: 1.1rem;
+    margin-bottom: 3.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .posts {
+    width: 90%;
+  }
+  .featured-posts {
+    width: 60%;
+  }
+  .all-posts {
+    width: 40%;
+  }
+  .all-posts__links {
+    padding: 1.8rem 7rem 1.8rem 1.7rem;
+  }
+  .all-posts__links:hover {
+    background-color: #fbf6ea;
+  }
+}
+@media (max-width: 1400px) {
+  .posts {
+    width: 90%;
+  }
+  .featured-posts {
+    width: 60%;
+  }
+  .all-posts {
+    width: 40%;
+  }
+  .all-posts__links {
+    padding: 1.8rem 7rem 1.8rem 1.7rem;
+  }
+}
 .about {
   display: flex;
   flex-direction: column;
@@ -656,6 +724,11 @@ body {
   flex-direction: column;
 }
 
+@media (max-width: 1400px) {
+  .content {
+    width: 100%;
+  }
+}
 .container {
   width: 100vw;
   height: 100vh;

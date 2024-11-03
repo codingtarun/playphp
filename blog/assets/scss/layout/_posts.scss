@@ -27,6 +27,16 @@
     &:hover {
       background-color: $b-color-light-yellow;
     }
+    &-label {
+      font-size: 1.4rem;
+      letter-spacing: 0;
+      line-height: 2rem;
+    }
+    &-heading {
+      font-size: $h4-font-size;
+      line-height: $h4-line-height;
+      font-weight: bold;
+    }
   }
 }
 .post {
@@ -39,5 +49,68 @@
     color: $b-color-medium-grey;
     font-size: 1.3rem;
     margin-bottom: 3.5rem;
+  }
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 992px) {
+  .featured-posts {
+    width: 50%;
+  }
+  .all-posts {
+    width: 50%;
+    &__links {
+      padding: 2rem 12rem 2rem 3rem;
+      &-heading {
+        font-size: $h5-font-size;
+        line-height: 3rem;
+      }
+    }
+  }
+  .post {
+    padding: 1rem 5rem;
+    &__image {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+    &__excerpt {
+      color: $b-color-medium-grey;
+      font-size: 1.1rem;
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .posts {
+    width: 90%;
+  }
+  .featured-posts {
+    width: 60%;
+  }
+  .all-posts {
+    width: 40%;
+
+    &__links {
+      padding: 1.8rem 7rem 1.8rem 1.7rem;
+      &:hover {
+        background-color: $b-color-light-yellow;
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .posts {
+    width: 90%;
+  }
+  .featured-posts {
+    width: 60%;
+  }
+  .all-posts {
+    width: 40%;
+    &__links {
+      padding: 1.8rem 7rem 1.8rem 1.7rem;
+    }
   }
 }
