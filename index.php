@@ -13,6 +13,7 @@
     <a href="blog/index.php">Blog</a>
     <a href="editor/index.php">Editor</a>
     <a href="photogallery/index.php">Photo Gallery</a>
+    <a href="http://127.0.0.1:8000/oop/index.php"> OOP </a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
