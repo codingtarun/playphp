@@ -20,6 +20,8 @@ class Bank
     private $balance;
     private $name;
     public $bankName;
+
+
     public function __construct($bankName)
     {
         $this->bankName = $bankName;
@@ -88,7 +90,7 @@ class Salary extends Bank
      */
     private $salaryDate;
 
-    public function __construct(string $salaryDate) // Both classes have constructor , which will be called and what argument to pass
+    public function __construct(string $salaryDate, Bank $bank) // Both classes have constructor , which will be called and what argument to pass
     {
         $this->salaryDate = $salaryDate;
     }
@@ -98,7 +100,7 @@ class Salary extends Bank
     }
 }
 echo "CHILD CLASS";
-$objSalary = new Salary("Co-oprative bank"); // since parent class has a construct and requires some argument , so child also need arguments by default.
+$objSalary = new Salary("Co-oprative bank", $bank); // since parent class has a construct and requires some argument , so child also need arguments by default.
 $objSalary->setBalance(20000); // using methods of parent class
 $objSalary->checkBalance(); // using child object to call parent function.
 echo $objSalary->bankName . "<br>"; // Accessing a parent class property in child class object.
