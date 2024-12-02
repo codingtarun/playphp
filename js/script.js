@@ -1,11 +1,16 @@
-
+"use strict";
 
 /**
- * Strict mode : 
- * 
+ *
+ * Strict mode : Strict Mode in JavaScript is a way to opt into a stricter set of rules for your code.
+ * It helps catch common mistakes and prevents potentially problematic language features,
+ * making your code cleaner, more secure, and easier to debug.
+ *
+ * We can apply strict mode to the entire application as well as a particular function.
+ *
+ *
+ *
  */
-
-
 
 console.log("HELLO JAVASCRIPT");
 
@@ -148,7 +153,51 @@ switch (day) {
  *
  */
 
+/**
+ *
+ * Functions : A reuseable piece of code that perform an action.
+ *
+ *
+ */
+
+function logger() {
+  // creating a function
+  console.log("LOGGER FUNCTION");
+}
+
+logger(); // executing / invoking / calling / running a function
+
+//  afunction recieving and returning a data
+
+function cal(x, y) {
+  return x + y;
+}
+
+console.log(cal(4, 5));
 
 /**
- * 
+ * Function declaration vs expression
+ */
+const sum = function (a, b) {
+  return a + b;
+};
+
+console.log(sum(33, 43));
+
+/**
+ *
+ * Arrow function : shorter syntax for writing functions.
+ *
+ */
+
+const abc = (x, y) => x - y;
+
+console.log(abc(34, 12));
+
+/**
+ *
+ * DATA STRUCTURE VERY IMPORTANT FOR DSA
+ *
+ * Arrays :
+ *
  */
