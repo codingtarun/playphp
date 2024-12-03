@@ -198,6 +198,63 @@ console.log(abc(34, 12));
  *
  * DATA STRUCTURE VERY IMPORTANT FOR DSA
  *
- * Arrays :
+ * Arrays : Ordered collection of same or different types of items.
+ * Items can be primitives [number,string,boolean etc] or object or nested array.
  *
  */
+
+const list = ["Tarun", "18th Feb", 1990, true, 2020]; // Define and store data to array. Lenght not defined
+
+console.log(list);
+
+const arrayOne = new Array(5); // Defines an empty array with lenght 5.
+
+console.log(arrayOne);
+
+const arrayTwo = new Array(false, true, 2, "3");
+
+console.log(arrayTwo);
+
+// Accessing the data
+
+console.log(list[4]);
+
+// Basic Array functions :
+
+// PUSH : Adding an element at the end of array.
+console.log(list.push(234)); // Adding a new element to the end of the list it returns the new length
+
+console.log(list);
+
+list[1] = "19th Feb"; // Replacing an existing value at any index
+
+console.log(list);
+
+// UNSHIFT : adding a new element to begining of the array
+
+console.log(list.unshift("Varun"));
+
+console.log(list);
+
+// POP : remove last element of the array
+
+console.log(list.pop()); // return the removed element
+
+console.log(list);
+
+// Shift : remove the first element and return the removed element
+
+console.log(list.shift());
+
+console.log(list);
+
+// indexOf : return the index of the element
+
+console.log(list.indexOf("Tarun")); // return index
+console.log(list.indexOf("ABC")); // returns -1
+
+// includes : check if element exists in array and return true / falase, uses strict equility for comparision
+
+console.log(list.includes(1990));
+
+console.log(list.includes(1200));
