@@ -8,8 +8,6 @@
  *
  * We can apply strict mode to the entire application as well as a particular function.
  *
- *
- *
  */
 
 console.log("HELLO JAVASCRIPT");
@@ -258,3 +256,5 @@ console.log(list.indexOf("ABC")); // returns -1
 console.log(list.includes(1990));
 
 console.log(list.includes(1200));
+
+
