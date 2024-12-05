@@ -336,3 +336,154 @@ class Log
 }
 
 $objLog = new Log();
+
+
+/**
+ * 
+ * Data encapsulation : Data encapsulation is a core principle of Object-Oriented Programming (OOP) 
+ * that involves bundling data (properties) and methods (functions) together in a class while restricting 
+ * direct access to some of the object's components. This ensures that the internal representation of the
+ * object is hidden from the outside world, providing better control, security, and maintainability.
+ * 
+ * We are hiding thes some methods and properties of a class and making them available only via methods.
+ * It is adesign pattren whcih we choose to implement in out application. 
+ *  
+ * We use Encapsulation along with getter and setter in PHP  to amake code more secure and flexible.
+ * 
+ */
+
+
+class User
+{
+    private $name;
+    private $job;
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    public function setJob($job)
+    {
+        $this->job = $job;
+    }
+    public function getName()
+    {
+        return $this->name;
+    }
+    public function getJob()
+    {
+        return $this->job;
+    }
+}
+
+$objUser = new User();
+$objUser->setName("Tarun Chauhan");
+$objUser->setJob("PHP Developer");
+
+echo '<hr> Name : ' . $objUser->getName() . ", Job : " . $objUser->getJob() . "<br>";
+
+
+/**
+ * 
+ * Data Abstraction : Data Abstraction is a key concept in Object-Oriented Programming (OOP) where the
+ * details of how data is stored and implemented are hidden from the user, and only essential features are exposed.
+ * In PHP, abstraction is primarily achieved using abstract classes and interfaces. 
+ * These tools allow developers to define what a class should do (the contract) while 
+ * leaving the implementation details to the specific classes.
+ * 
+ */
+
+
+abstract class Area
+{
+    private $color;
+
+    abstract function calculateArea();
+
+    public function setColor($color)
+    {
+        return $this->color = $color;
+    }
+    public function getColor()
+    {
+        return $this->color;
+    }
+}
+
+class Rectangle extends Area
+{
+    private $length;
+    private $width;
+
+    public function __construct($length, $width, $color)
+    {
+        $this->length = $length;
+        $this->width = $width;
+        $this->setColor($color);
+    }
+    public function calculateArea()
+    {
+        return $this->length * $this->width;
+    }
+}
+
+class Circle extends Area
+{
+    private $radius;
+    protected $pi = 3.14;
+
+    public function __construct($radius, $color)
+    {
+        $this->radius = $radius;
+        $this->setColor($color);
+    }
+    public function calculateArea()
+    {
+        return $this->pi * $this->radius * $this->radius;
+    }
+}
+
+$objCircle = new Circle(20, 'RED');
+$objRactangle = new Rectangle(20, 30, 'YELLOW');
+
+echo "<hr>";
+echo "<br> Area of Rectangle " . $objRactangle->calculateArea() . ". Color : " . $objRactangle->getColor();
+echo "<br> Area of Rectangle " . $objCircle->calculateArea() . ". Color : " . $objCircle->getColor();
+echo "<hr>";
+
+/**
+ * 
+ * Overriding : Method overriding in PHP is a feature in Object-Oriented Programming (OOP)
+ * where a child class redefines a method of its parent class. The child class provides its 
+ * own implementation of the method, which replaces (or "overrides") the implementation in
+ * the parent class when called through an instance of the child class.
+ * 
+ */
+
+
+
+/**
+ * 
+ * Magic Methods : Magic methods in PHP are special methods that are automatically triggered by PHP in certain scenarios.
+ * They start with a double underscore (__) and are used to perform specific actions.
+ * These methods are a part of PHP's object-oriented programming (OOP) capabilities. 
+ *
+ */
+
+class MagicMethod
+{
+    public function __construct()
+    {
+        /**
+         * Gets called automatically when instance of a class is created
+         */
+    }
+
+    public function __destruct()
+    {
+        /**
+         * Gets called automatically at the end of instance
+         */
+    }
+}
