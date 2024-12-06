@@ -37,7 +37,7 @@ class Car
 
     /**
      * 
-     * _constructor : A special function which is automatically invoked when object of class is created.
+     * _construct : A special function which is automatically invoked when object of class is created.
      * Can be used to initialize the properties.
      * 
      * When we declares values in constructor we need to pass those values when creating the object of the class.
@@ -50,7 +50,7 @@ class Car
          * 
          * Initializing the values.
          * 
-         * $this -> keyword inside a class is used to define current object instance.
+         * $this -> keyword inside a class is used to define current instance of the class.
          * 
          */
 
@@ -90,9 +90,9 @@ $objCar->carDetails();
 /**
  * 
  * Key Concepts of OOP: 
- * 1. Inheritance : A class inherits the properties and methods of another class.
- * 2. Polymorphism : Allows a method to behaves differently , based upon the object calling it.
- * 3. Abstract Class : Classes that are not meant to be instantiated, we can only extend them.
+ * 1. Polymorphism : Allows a method to behaves differently , based upon the object calling it.
+ * 2. Abstract Class : Classes that are not meant to be instantiated, we can only extend them.
+ * 3. Inheritance : A class inherits the properties and methods of another class.
  * 4. Interface : It define a contract for the class it is implimented by, child class must implement all the methods in interface.
  * 5. Traits : Allows reuse of code accross multiple classs without the use of inheritance.
  * 
@@ -241,7 +241,7 @@ $objOnePlus10R->phoneSpecification();
 
 /**
  * 
- * Interface : An interface defines a contract fro classes.
+ * Interface : An interface defines a contract for classes.
  * A class that impliment an interface must define all the methods declared in interface.
  * Unlike Abstract methods , Interface cannot define the concrete method.
  * 
@@ -486,4 +486,48 @@ class MagicMethod
          * Gets called automatically at the end of instance
          */
     }
+
+    public function __call($name, $arguments)
+    {
+        /**
+         * When we try to call a method which does not exists in the class then this method will be called
+         */
+
+        echo "Your tried to call an non-existing method :" . $name . "<br>";
+        var_dump($arguments);
+    }
+
+    public function __toString()
+    {
+        /**
+         * When we try to acess an object as a string.
+         */
+
+        return "<br>You are trying to print an object as a string.<br>";
+    }
+
+    public function __debugInfo()
+    {
+        /**
+         * When we call a var_dump function for the object , this methods will be called
+         */
+
+        return ['INFO' => 'SOMETHING IS WRONG'];
+    }
 }
+
+
+$objMagicMethod = new MagicMethod();
+$objMagicMethod->printMsg("HELLO MAGIC METHODS");
+echo $objMagicMethod;
+var_dump($objMagicMethod);
+
+
+/**
+ * 
+ * Type Hinting : Type hinting in PHP is a feature that enforces the type of 
+ * arguments and return values for functions, methods, and class properties
+ * 
+ * It provied the information about input data types and the type which a function will return.
+ * 
+ */
