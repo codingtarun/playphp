@@ -531,3 +531,46 @@ var_dump($objMagicMethod);
  * It provied the information about input data types and the type which a function will return.
  * 
  */
+
+
+/**
+ * 
+ * Dependency Injection : Dependency Injection (DI) is a design pattern where an object receives (or is "injected with")
+ *  its dependencies from an external source rather than creating them internally.
+ * This promotes loose coupling, makes code easier to test, and adheres to the Single Responsibility Principle.
+ * 
+ */
+/**
+ * 
+ * A Trait in PHP is a mechanism for code reuse that allows you to include methods in multiple classes without using inheritance.
+ * Traits provide a way to avoid code duplication and overcome PHP's single inheritance limitation (a class can only extend one other class).
+ *  
+ */
+
+
+/**
+ * 
+ * Autoloading : Autoloading in PHP is a mechanism that automatically loads required classes or files without manually
+ * including them using require or include. It simplifies managing dependencies and improves code organization.
+ * 
+ */
+
+spl_autoload_register(function ($filename) {
+    require($filename . '.php');
+});
+
+echo "<hr>";
+
+
+$objFiles = new Files;
+$objFiles->sayHello();
+
+$objDatabase = new Database;
+$objDatabase->sayHello();
+
+
+$objPdf = new Controllers\Pdf; // With namespace
+$objPdf->hello();
+
+$objExcel = new Controllers\Excel; // With namespace
+$objExcel->hello();
