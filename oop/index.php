@@ -89,7 +89,7 @@ $objCar->carDetails();
 
 /**
  * 
- * Key Concepts of OOP: 
+ * Key Concepts of OOP:(PAIIT) 
  * 1. Polymorphism : Allows a method to behaves differently , based upon the object calling it.
  * 2. Abstract Class : Classes that are not meant to be instantiated, we can only extend them.
  * 3. Inheritance : A class inherits the properties and methods of another class.
@@ -574,3 +574,130 @@ $objPdf->hello();
 
 $objExcel = new Controllers\Excel; // With namespace
 $objExcel->hello();
+
+
+/**
+ * 
+ * The SOLID principles in PHP (or any object-oriented programming language) are a set of five design principles aimed at creating maintainable, scalable, and robust software. 
+ * The acronym SOLID stands for:
+ * 
+ * S: Single Responsibility Principle (SRP)
+ * O: Open/Closed Principle (OCP)
+ * L: Liskov Substitution Principle (LSP)
+ * I: Interface Segregation Principle (ISP)
+ * D: Dependency Inversion Principle (DIP)
+ * 
+ * 
+ * 1. SRP - Single Responsibility Principle
+ * a. A class should define a single purpose and the properties and function should belongs to that responsibilty.
+ * b. Any new feature to add must be related to the already mentioned resposibility without depending on others.
+ * 
+ */
+
+
+class Student
+{
+    // This class must containt all properties and methods related to student only.
+
+    private $name = '';
+    private $subjects = [];
+    private $rollNo = 0; // properties related to student only
+
+    public function studentDetails(string $name, array $subjects, int $rollNo): void // function related to student only
+    {
+        $this->name = $name;
+        $this->subjects = $subjects;
+        $this->rollNo = $rollNo;
+    }
+    public function showStudentDetails(): string
+    {
+        $subjectList = '';
+        foreach ($this->subjects as $subject) {
+            $subjectList .= $subject . " <br> ";
+        }
+        return "<hr>Student Name :" . $this->name . "<br> Student Subjects : " . $subjectList . "<br> Student Roll no :" . $this->rollNo;
+    }
+}
+
+$objStudent = new Student;
+$objStudent->studentDetails("Tarun Chauhan", ['Math', 'Science', 'Hindi', 'English', 'Sanskrit'], 1234);
+echo $objStudent->showStudentDetails();
+
+
+/**
+ * 
+ * OCP : Open /Closed principle : Open for extention but closed for modification
+ * a. A Parent class is only allowed to be extent , but not allowed to be modified.
+ * b. Any changes to child class, should not modify the parent class.
+ * 
+ * 
+ */
+
+// With out OCP : 
+
+class UserType
+{
+    function showUserType(string $userType)
+    {
+        if ($userType === 'Admin') {
+            // generate token for access
+        } elseif ($userType === 'Manager') {
+            // generate toke for access
+        }
+    }
+    // What will happen if user type is something else ??? 
+}
+
+// To solve above probelm we'll implement O/CP 
+
+interface TypeOfUser
+{
+    public function generateToken();
+}
+
+class AdminUser implements TypeOfUser
+{
+    public function generateToken()
+    {
+        // generate token for admin
+    }
+}
+
+class ManagerUser implements TypeOfUser
+{
+    public function generateToken()
+    {
+        // generate token
+    }
+}
+// we can add as many as users classes accroding to types and implement 'generateToken' function accroding to our need.
+
+
+/**
+ * 
+ * LSP : CHECK AGAIN 
+ * a. The Liskov Substitution Principle states that objects of a derived (child) class must be substitutable for objects of the base (parent) class without altering the correctness or behavior of the program.
+ * b. 
+ * 
+ * 
+ */
+
+
+
+/**
+ * 
+ * ISP : Interface Segregation Method : 
+ * a. It states that a class should not be forced to implement interfaces it does not use. Interfaces should be small and focused.
+ * b. Avoid creating large, bloated interfaces.
+ * c. Divide large interfaces into smaller, more specific ones.
+ * d. Let classes implement only the interfaces they need.
+ * 
+ */
+
+/**
+ * 
+ * DIP : Dependency Inversion Principle 
+ * The Dependency Inversion Principle states that:
+ * a. High-level modules should not depend on low-level modules. Both should depend on abstractions.
+ * b.  Abstractions should not depend on details. Details should depend on abstractions.
+ */
