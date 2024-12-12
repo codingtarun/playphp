@@ -1,0 +1,1 @@
+DELETE FROM `playphp`.`tasks` WHERE  `id`=3;
