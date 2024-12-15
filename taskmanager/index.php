@@ -44,7 +44,7 @@ require_once('./controller/TaskController.php');
                                 <th scope="col">#</th>
                                 <th scope="col">Task</th>
                                 <th scope="col">Status</th>
-                                <th scope="col">Options</th>
+                                <th scope="col">Optons</th>
                             </tr>
                         </thead>
                         <tbody>
