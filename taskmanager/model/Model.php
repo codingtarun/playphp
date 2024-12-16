@@ -2,7 +2,7 @@
 
 namespace Model;
 
-use Database\Database;
+use App\Core\Database;
 
 class Model
 {
@@ -16,14 +16,29 @@ class Model
         $this->table = $table;
         $this->columns = $columns;
     }
-    // GET ALL RECORD
-    public function get()
+
+    /**
+     * Returns all the resouces
+     *
+     * @return object
+     */
+
+    public function getAll()
     {
         $query = "SELECT * FROM " . $this->table;
         $this->db->query($query);
         return $this->db->getAll();
     }
-    // INSERT A NEW RECORD 
+
+
+    /**
+     * 
+     * Insert a new resource & returns the ID of new resource
+     *
+     * @param array $data
+     * @return int
+     * 
+     */
     public function insert(array $data)
     {
         $query = "INSERT INTO " . $this->table . " (" . implode(", ", $this->columns) . ") VALUES (:" . implode(", :", $this->columns) . ")";
@@ -32,22 +47,66 @@ class Model
             $this->db->bind(':' . $column, $value);
         }
         if ($this->db->execute()) {
-            echo "OK";
+            return 1;
         } else {
-            echo $this->db->getError();
+            return 0;
         }
     }
-    // DESTORY A RECORD 
-    public function destory($id)
+    /**
+     * Deletes the resource
+     *
+     * @param int $id
+     * @return bool
+     * 
+     */
+    public function delete($id)
     {
         $query = "DELETE FROM " . $this->table . " WHERE id = :id";
-
         $this->db->query($query);
         $this->db->bind(':id', $id);
         if ($this->db->execute()) {
-            return "DESTROYED";
+            return true;
         } else {
             return $this->db->getError();
+        }
+    }
+    /**
+     * 
+     * Returns the specific resource
+     * 
+     * @param int $id
+     * @return object
+     * 
+     */
+    public function get(int $id): object
+    {
+        $query = "SELECT * FROM " . $this->table . " WHERE id = :id";
+        $this->db->query($query);
+        $this->db->bind(':id', $id);
+        return $this->db->getFirst();
+    }
+
+    /**
+     * 
+     * Update the given resource
+     * 
+     * @param int $id 
+     * @param array $data
+     * 
+     * @return bool
+     * 
+     */
+
+    public function update(int $id, array $data): bool
+    {
+        $query = "UPDATE " . $this->table . " SET task=:task WHERE id=:id";
+        $this->db->query($query);
+        $this->db->bind(':id', $id);
+        $this->db->bind(':task', $data['task']);
+        if ($this->db->execute()) {
+            return 1;
+        } else {
+            return 0;
         }
     }
 }
