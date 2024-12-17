@@ -2,7 +2,15 @@
 
 /**
  * 
- * Application's all configuration 
+ * This file contains the configurations of the application
+ * 
+ */
+
+
+
+/**
+ * 
+ * Database configuration
  * 
  */
 

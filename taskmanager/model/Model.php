@@ -109,4 +109,34 @@ class Model
             return 0;
         }
     }
+
+    /**
+     * 
+     * User login function
+     * Check if user exists based on email and return user
+     * Check password
+     * 
+     * @param array $data
+     * @return object
+     * 
+     */
+
+    public function login($data)
+    {
+        $query = "SELECT * FROM users WHERE email=:email";
+        $this->db->query($query);
+        $this->db->bind(':email', $data['email']);
+        $this->db->execute();
+        $user = $this->db->getFirst();
+        if (!empty($user)) {
+            // Validate password 
+            if (password_verify($data['password'], $user->password)) {
+                return $user;
+            } else {
+                return 'WRONG PASSWORD';
+            }
+        } else {
+            return "USER NOT FOUND";
+        }
+    }
 }

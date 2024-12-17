@@ -6,6 +6,12 @@ use Model\Model;
 
 class Task extends Model
 {
+    /**
+     * 
+     * Extending this model means all the functions from Model is available in this class.
+     * 
+     */
+
     private $table = 'tasks';
 
     private $columns = [

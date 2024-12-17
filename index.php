@@ -38,7 +38,7 @@ $user = new Model\User;
                             <li><a class="dropdown-item" href="editor/index.php">Editor</a></li>
                             <li><a class="dropdown-item" href="photogallery/index.php">Photogallery</a></li>
                             <li><a class=" dropdown-item" href="http://127.0.0.1:8000/oop/index.php">OOPS</a></li>
-                            <li><a class=" dropdown-item" href=" http://127.0.0.1:8000/taskmanager">OOPS</a></li>
+                            <li><a class=" dropdown-item" href=" http://127.0.0.1:8000/taskmanager">Taskmanager</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

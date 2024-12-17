@@ -1,22 +1,9 @@
 <?php
+require_once('./partials/_head.php');
 require_once('./app/config/autoloader.php');
 require_once('./controller/TaskController.php');
+
 ?>
-<!doctype html>
-<html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="http://127.0.0.1:8000/taskmanager/assets/bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
-
-    <!--Fontawesome 5-->
-    <link rel="stylesheet" href="http://127.0.0.1:8000/taskmanager/assets/fontawesome-5/css/all.css">
-    <title>PHP | Taskmanager </title>
-</head>
 
 <body>
     <div class="container-fluid bg-grey-100 min-vh-100 d-flex justify-content-center">
@@ -43,8 +30,7 @@ require_once('./controller/TaskController.php');
             </div>
         </div>
     </div>
-    <script src="http://127.0.0.1:8000/taskmanager/assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
-    <script src="http://127.0.0.1:8000/taskmanager/assets/js/jquery-3.7.1.js"></script>
+    <?php require_once('./partials/_footer-script.php') ?>
 </body>
 
 </html>

@@ -23,7 +23,7 @@ class Database
      * 
      * Commong flow of PDO 
      * 
-     * We write a query --> we run prepare --> we bind parameters(any) --> Execute
+     * We write a query --> we run prepare --> we bind parameters(any) --> Execute --> Fetch
      * 
      * 
      */
