@@ -133,10 +133,10 @@ class Model
             if (password_verify($data['password'], $user->password)) {
                 return $user;
             } else {
-                return 'WRONG PASSWORD';
+                return 1;
             }
         } else {
-            return "USER NOT FOUND";
+            return 2;
         }
     }
 }

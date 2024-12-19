@@ -69,7 +69,14 @@ class AuthController
     }
     public function login(array $user)
     {
-        Session::start($user);
+        $response = $this->user->login($user);
+        if ($response === 1) {
+            Session::errors("PASSWORD MISMATCHED");
+        } elseif ($response === 2) {
+            Session::errors("USER NOT FOUND");
+        } else {
+            Session::start($user);
+        }
     }
     public function logout()
     {

@@ -1,16 +1,14 @@
 <?php
 session_start();
-var_dump(basename($_SERVER['PHP_SELF']));
-if (!isset($_SESSION['user']) && (basename($_SERVER['PHP_SELF']) !== 'login.php')) {
+echo "<pre>";
+print_r($_SESSION);
+echo "</pre>";
+$page = basename($_SERVER['PHP_SELF']);
+if (!isset($_SESSION['user'])) {
     // if user not logged in redirect to login page
     header('location:http://127.0.0.1:8000/taskmanager/login.php');
-} elseif (isset($_SESSION['user']) && (basename($_SERVER['PHP_SELF']) === 'login.php') || (basename($_SERVER['PHP_SELF']) === 'register.php')) {
-    header('location:http://127.0.0.1:8000/taskmanager/index.php');
-    exit();
+    exit;
 }
-
-//session_destroy();
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -25,5 +23,5 @@ if (!isset($_SESSION['user']) && (basename($_SERVER['PHP_SELF']) !== 'login.php'
 
     <!--Fontawesome 5-->
     <link rel="stylesheet" href="http://127.0.0.1:8000/taskmanager/assets/fontawesome-5/css/all.css">
-    <title>Blog Login </title>
+    <title>Blog | <?php echo $page; ?> </title>
 </head>

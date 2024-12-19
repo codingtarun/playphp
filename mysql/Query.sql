@@ -1,1 +1,1 @@
-DELETE FROM `playphp`.`tasks` WHERE  `id`=3;tasks
+DELETE FROM `playphp`.`tasks` WHERE  `id`=3;tasksusers

@@ -24,7 +24,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <!-- Display User Name Dynamically -->
-                        <i class="bi bi-person-circle"></i> <?php echo $_SESSION['user']->username; ?>
+                        <i class="bi bi-person-circle"></i> <?php print_r($_SESSION['user']['username']); ?>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                         <li><a class="dropdown-item" href="profile.php">Profile</a></li>

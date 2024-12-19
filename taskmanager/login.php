@@ -1,13 +1,28 @@
 <?php
-require_once('./partials/_head.php');
+session_start();
 require_once('./app/config/autoloader.php');
 require_once('./controller/AuthController.php');
 ?>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="http://127.0.0.1:8000/taskmanager/assets/bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Fontawesome 5-->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/taskmanager/assets/fontawesome-5/css/all.css">
+    <title>Blog | Login </title>
+</head>
 
 <body>
     <div class="container-fluid bg-grey-100 min-vh-100 d-flex align-items-center justify-content-center">
-        <div class="taskmanager-box">
-            <div class=" card shadow-sm my-3">
+        <div class="taskmanager-box" style="width: 35%;">
+            <div class="card shadow-sm my-3">
                 <div class="card-body">
                     <h5 class="card-title">Login</h5>
                     <form action="#" method="POST" class="mb-3">
@@ -33,6 +48,16 @@ require_once('./controller/AuthController.php');
                     <p class="text-center m-0">Forgot Password ? <a href="#">Reset</a></p>
                 </div>
             </div>
+            <?php if (isset($_SESSION['errors'])) { ?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <?php foreach ($_SESSION['errors'] as $error) {
+                        echo $error;
+                    } ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php
+                unset($_SESSION['errors']);
+            } ?>
         </div>
     </div>
     <?php require_once('./partials/_footer-script.php') ?>

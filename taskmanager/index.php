@@ -2,6 +2,7 @@
 require_once('./partials/_head.php');
 require_once('./app/config/autoloader.php');
 require_once('./controller/TaskController.php');
+
 ?>
 
 <body>
